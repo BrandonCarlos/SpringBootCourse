@@ -17,8 +17,8 @@ public interface TopicoRepository extends JpaRepository<Topico, Long> {//JpaRepo
 	//e assim não precisaremos mais utilizar o JPQL
 	
 	//Se quisermos nos mesmos colocarmos outro nome no método, então vamos precisar escrever toda a QUERY em formato JPQL e ai atribuimos o parâmetro @Param vinculado com o :nomeCurso
-	@Query("SELECT t FROM Topico t WHERE t.curso.nome = :nomeCurso")//:nomeCurso <- vai vir lá da URL, ex: https://localhost:8080?cursoNome=Spring+Boot
-	List<Topico> carregarPorNomeDoCurso(@Param("nomeCurso") String nomeCurso);
+//	@Query("SELECT t FROM Topico t WHERE t.curso.nome = :nomeCurso")//:nomeCurso <- vai vir lá da URL, ex: https://localhost:8080?cursoNome=Spring+Boot
+//	List<Topico> carregarPorNomeDoCurso(@Param("nomeCurso") String nomeCurso);
 
 	
 	
